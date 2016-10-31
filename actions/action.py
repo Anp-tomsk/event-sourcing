@@ -12,4 +12,4 @@ class Action(Document):
 def create_action(action_type, payload):
     print("Payload {0}", payload)
     Action.objects.create(action_type=action_type, payload=payload,
-                          callback=lambda action: bus.publish(action))
+                          callback=lambda action: bus.publish_message(action.to_son()))
