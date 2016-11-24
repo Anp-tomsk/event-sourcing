@@ -1,0 +1,4 @@
+tornado==4.4.2
+motor==1.0
+motorengine==0.9.1
+pika==0.10.0
